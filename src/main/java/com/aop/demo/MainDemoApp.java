@@ -19,6 +19,6 @@ public class MainDemoApp {
         theAccountDAO.addAccount();
 
         // close the context
-//        context.close();
+//        context.cl
     }
 }
