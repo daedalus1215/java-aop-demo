@@ -12,7 +12,7 @@ public class MyDemoLoggingAspect {
 
     // let's start with an @Before advice
 
-    @Before("execution(* *(..))") // call this aspect's method when addAccount() method is called
+    @Before("execution(* com.aop.demo.dao.*.*(..))")
     public void beforeAddAccountAdvice() {
         System.out.println("\n========>>>>> Executing @Before advice on addAccount()");
     }
