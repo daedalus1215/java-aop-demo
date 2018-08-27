@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4003051c-318e-4ed2-b27c-d5e1ffc79da6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/aop/demo/MainDemoApp.java" afterPath="$PROJECT_DIR$/src/main/java/com/aop/demo/MainDemoApp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyDemoLoggingAspect.java" afterPath="$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyDemoLoggingAspect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/aop/demo/dao/AccountDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/aop/demo/dao/AccountDAO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +28,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DemoConfig.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="DemoConfig.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/demo/DemoConfig.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <state relative-caret-position="216">
+                  <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -42,11 +40,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MyDemoLoggingAspect.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MyDemoLoggingAspect.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyDemoLoggingAspect.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="252">
-                  <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+                  <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -382,12 +380,12 @@
       <workItem from="1534682678908" duration="2762000" />
       <workItem from="1534796862527" duration="1444000" />
       <workItem from="1534896996328" duration="107000" />
-      <workItem from="1535331880003" duration="1002000" />
+      <workItem from="1535331880003" duration="1034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5315000" />
+    <option name="totallyTimeSpent" value="5347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1038" height="1119" extended-state="0" />
@@ -608,16 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyDemoLoggingAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/demo/dao/AccountDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -631,8 +619,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/demo/DemoConfig.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyDemoLoggingAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
