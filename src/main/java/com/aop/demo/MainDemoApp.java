@@ -22,7 +22,7 @@ public class MainDemoApp {
         // call the business method
         theAccountDAO.addAccount();
 
-        theAccountDAO.addAccountEntity(new AccountEntity("Thomas", "12"));
+        theAccountDAO.addAccountEntity(new AccountEntity("Thomas", "12"), false);
         // close the context
 //        context.cl
     }

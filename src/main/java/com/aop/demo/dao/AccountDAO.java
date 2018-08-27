@@ -15,7 +15,7 @@ public class AccountDAO {
         return 1;
     }
 
-    public void addAccountEntity(AccountEntity entity) {
+    public void addAccountEntity(AccountEntity entity, boolean vipFlag) {
         System.out.println("adding the account with name:  " + entity.toString());
     }
 
