@@ -16,10 +16,4 @@ public class MyDemoLoggingAspect {
     public void beforeAddAccountAdvice() {
         System.out.println("\n========>>>>> Executing @Before advice on addAccount()");
     }
-
-
-    @Before("execution(public void add*())")
-    public void beforeAnyAddMethodAdvice() {
-        System.out.println("\n==========>>> Executing @Before advice on any method that starts with add, e.g. addAccount()");
-    }
 }
