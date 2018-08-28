@@ -14,11 +14,12 @@ public class MyDemoLoggingAspect {
 
     @Before("forDaoPackage()")
     public void beforeAddAccountAdvice() {
-        System.out.println("\n =====> Executing @Before advice");
+        System.out.println("\n =====> Executing @Before beforeAddAccountAdvice() advice");
     }
 
     @Before("forDaoPackage()")
     public void performApiAnalytics() {
+        System.out.println("\n =====> Executing @Before performApiAnalystics() advice");
 
     }
 }
