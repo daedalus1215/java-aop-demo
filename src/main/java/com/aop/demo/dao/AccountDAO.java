@@ -5,6 +5,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class AccountDAO {
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public void addAccount() {
         System.out.println(getClass() + ": DOING MY DB WORK: ADDING AN ACCOUNT");

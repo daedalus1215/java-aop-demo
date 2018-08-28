@@ -23,6 +23,10 @@ public class MainDemoApp {
         theAccountDAO.addAccount();
 
         theAccountDAO.addAccountEntity(new AccountEntity("Thomas", "12"), false);
+
+        theAccountDAO.setId(1);
+        System.out.println(theAccountDAO.getId());
+
         // close the context
 //        context.cl
     }

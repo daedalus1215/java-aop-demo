@@ -9,7 +9,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration // Spring pure java configuration
 @EnableAspectJAutoProxy // Spring aop proxy support
-@ComponentScan("com.aop.demo") // component scan for components and aspects - recurse packages
+@ComponentScan("com.aop.demo.dao") // component scan for components and aspects - recurse packages
 public class DemoConfig {
 
 
