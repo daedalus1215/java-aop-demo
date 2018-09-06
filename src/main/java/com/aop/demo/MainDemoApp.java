@@ -9,12 +9,12 @@ public class MainDemoApp {
 
     public static void main(String[] args) {
         // read spring config java class
-        ApplicationContext context = new AnnotationConfigApplicationContext(DemoConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DemoConfig.class);
 
 
 
         // get the bean from the spring container
-        AccountDAO theAccountDAO = (AccountDAO) context.getBean("accountDAO", AccountDAO.class);
+        AccountDAO theAccountDAO = context.getBean("accountDAO", AccountDAO.class);
 
 
         System.out.println("return: " + theAccountDAO.returnAccountOne());
@@ -28,6 +28,6 @@ public class MainDemoApp {
         System.out.println(theAccountDAO.getId());
 
         // close the context
-//        context.cl
+        context.close();
     }
 }
