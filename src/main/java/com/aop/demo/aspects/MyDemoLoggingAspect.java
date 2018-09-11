@@ -9,30 +9,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyDemoLoggingAspect {
 
-    @Pointcut("execution(void com.aop.demo.dao.*.*(..))")
-    private void forDaoPackage() {}
 
 
-    // create point cut for getter methods
-    @Pointcut("execution(* com.aop.demo.dao.*.get*(..))")
-    private void getter() {}
 
-    // create pointcut for setter methods
-    @Pointcut("execution(* com.aop.demo.dao.*.set*(..))")
-    private void setter() {}
-
-    // create point: include package ... exlcude getter/setter
-    @Pointcut("forDaoPackage() && !(getter() || setter())")
-    private void forDaoPackageNoGetterSetter() {}
-
-
-//    @Before("forDaoPackage()")
-//    public void beforeAddAccountAdvice() {
-//        System.out.println("\n =====> Executing @Before beforeAddAccountAdvice() advice");
-//    }
+    @Before("forDaoPackageNoGetterSetter()")
+    public void beforeAddAccountAdvice() {
+        System.out.println("\n =====> Executing @Before beforeAddAccountAdvice() advice");
+    }
 
     @Before("forDaoPackageNoGetterSetter()")
     public void performApiAnalytics() {
-        System.out.println("\n =====> Executing @Before performApiAnalystics() advice");
+        System.out.println("\n =====> Performing API analytics");
+    }
+
+    @Before("forDaoPackageNoGetterSetter()")
+    public void logToCloudAsync() {
+        System.out.println("\n=======> Logging to Cloud in async fashion");
     }
 }
