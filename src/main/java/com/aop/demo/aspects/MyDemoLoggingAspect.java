@@ -21,7 +21,7 @@ public class MyDemoLoggingAspect {
         Object[] args = theJoinPoint.getArgs();
 
 
-        System.out.println("\n =====> Executing @Before beforeAddAccountAdvice() advice. " +
+        System.out.println("\n =====> Executing @Before beforeAddAccountAdvice() advice. - START \n" +
                 "From: " + theJoinPoint.getSignature() + " with arguments: \n");
 
         for (Object tempArg: args) {
@@ -32,6 +32,8 @@ public class MyDemoLoggingAspect {
                 System.out.println(tempArg.toString());
             }
         }
+
+        System.out.println("\n =====> Executing @Before beforeAddAccountAdvice() advice. - END \n");
     }
 
 
@@ -40,12 +42,25 @@ public class MyDemoLoggingAspect {
             returning="result"
     )
     public void afterFindAccounts(JoinPoint joinPoint, ArrayList<AccountEntity> result) {
-        System.out.print(MyDemoLoggingAspect.class + "'s afterFindAccounts has been triggered - START\n");
+        System.out.print("\n" + MyDemoLoggingAspect.class + "'s afterFindAccounts has been triggered - START\n");
+
+        System.out.print("Names are: ");
         for (AccountEntity entity : result) {
             System.out.println("The Account's level is set at: " + ((AccountEntity) entity).getLevel());
             System.out.println("The Account's name is set at: " + ((AccountEntity) entity).getName());
+            convertNamesToUpperCase(entity);
         }
+
+
+        for (AccountEntity entity : result) {
+            convertNamesToUpperCase(entity);
+        }
+
         System.out.print(MyDemoLoggingAspect.class + "'s afterFindAccounts has been triggered - END\n");
+    }
+
+    private void convertNamesToUpperCase(AccountEntity entity) {
+        entity.setName(entity.getName().toUpperCase());
     }
 
 }

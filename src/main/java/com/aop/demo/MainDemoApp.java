@@ -31,6 +31,12 @@ public class MainDemoApp {
 
         List<AccountEntity> entities = theAccountDAO.findAccounts();
 
+        for (AccountEntity entity : entities) {
+            System.out.println("The Account's level is set at: " + ((AccountEntity) entity).getLevel());
+            System.out.println("The Account's name is set at: " + ((AccountEntity) entity).getName());
+        }
+
+
         // close the context
         context.close();
     }
