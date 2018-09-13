@@ -27,6 +27,7 @@ public class MyDemoLoggingAspect {
         } catch (Exception exc) {
             System.out.println("\n " + exc.getMessage());
             result = "Nothing exciting here. Move along!";
+            throw exc;
         }
 
 

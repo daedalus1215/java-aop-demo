@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4003051c-318e-4ed2-b27c-d5e1ffc79da6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/aop/demo/MainDemoApp.java" afterPath="$PROJECT_DIR$/src/main/java/com/aop/demo/MainDemoApp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyDemoLoggingAspect.java" afterPath="$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyDemoLoggingAspect.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +22,8 @@
       <file leaf-file-name="MyDemoLoggingAspect.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyDemoLoggingAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="414">
+              <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,8 +111,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyCloudLogAsyncAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyApiAnalyticsAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aop/demo/dao/AccountDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyDemoLoggingAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aop/demo/MainDemoApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyDemoLoggingAspect.java" />
       </list>
     </option>
   </component>
@@ -396,12 +394,12 @@
       <workItem from="1536234110743" duration="1994000" />
       <workItem from="1536662644460" duration="1740000" />
       <workItem from="1536802521719" duration="3525000" />
-      <workItem from="1536838728347" duration="1489000" />
+      <workItem from="1536838728347" duration="1595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18414000" />
+    <option name="totallyTimeSpent" value="18520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1036" height="1118" extended-state="0" />
@@ -869,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aop/demo/aspects/MyDemoLoggingAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="414">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
