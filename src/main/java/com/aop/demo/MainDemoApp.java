@@ -5,6 +5,8 @@ import com.aop.demo.dao.AccountDAO;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.List;
+
 public class MainDemoApp {
 
     public static void main(String[] args) {
@@ -19,13 +21,15 @@ public class MainDemoApp {
 
         System.out.println("return: " + theAccountDAO.returnAccountOne());
 
-        // call the business method
-        theAccountDAO.addAccount();
 
-        theAccountDAO.addAccountEntity(new AccountEntity("Thomas", "12"), false);
+        theAccountDAO.addAccountEntity(new AccountEntity("Thomas", "13"), false);
+        theAccountDAO.addAccountEntity(new AccountEntity("Benjamin", "14"), false);
+        theAccountDAO.addAccountEntity(new AccountEntity("Hamilton", "15"), false);
 
         theAccountDAO.setId(1);
         System.out.println(theAccountDAO.getId());
+
+        List<AccountEntity> entities = theAccountDAO.findAccounts();
 
         // close the context
         context.close();
