@@ -29,8 +29,14 @@ public class AccountDAO {
         System.out.println("adding the account with name:  " + entity.toString());
     }
 
-    public ArrayList<AccountEntity> findAccounts() {
-        return this.accountEntities;
+
+    public ArrayList<AccountEntity> findAccounts() throws Exception {
+        if (this.accountEntities.size() >= 1) {
+            return this.accountEntities;
+        }
+
+        // simulate a throwing exception
+        throw new Exception("Issue with findAccounts()");
     }
 
 }

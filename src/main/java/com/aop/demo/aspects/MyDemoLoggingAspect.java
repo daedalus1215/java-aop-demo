@@ -3,6 +3,7 @@ package com.aop.demo.aspects;
 import com.aop.demo.Entity.AccountEntity;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.core.annotation.Order;
@@ -61,6 +62,21 @@ public class MyDemoLoggingAspect {
 
     private void convertNamesToUpperCase(AccountEntity entity) {
         entity.setName(entity.getName().toUpperCase());
+    }
+
+
+
+
+
+    @AfterThrowing(
+            pointcut = "execution(* com.aop.demo.dao.AccountDAO.findAccounts(..))",
+            throwing = "exception"
+    )
+    public void afterFindAccountsThrowsException(Exception exception) {
+        System.out.print("\n" + MyDemoLoggingAspect.class + "'s afterFindAccountsThrowsException has been triggered - START\n");
+        System.out.println("\n " + exception.getMessage());
+        System.out.print("\n" + MyDemoLoggingAspect.class + "'s afterFindAccountsThrowsException has been triggered - END\n");
+
     }
 
 }

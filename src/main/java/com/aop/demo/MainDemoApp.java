@@ -9,7 +9,7 @@ import java.util.List;
 
 public class MainDemoApp {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         // read spring config java class
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DemoConfig.class);
 
@@ -22,9 +22,9 @@ public class MainDemoApp {
         System.out.println("return: " + theAccountDAO.returnAccountOne());
 
 
-        theAccountDAO.addAccountEntity(new AccountEntity("Thomas", "13"), false);
-        theAccountDAO.addAccountEntity(new AccountEntity("Benjamin", "14"), false);
-        theAccountDAO.addAccountEntity(new AccountEntity("Hamilton", "15"), false);
+//        theAccountDAO.addAccountEntity(new AccountEntity("Thomas", "13"), false);
+//        theAccountDAO.addAccountEntity(new AccountEntity("Benjamin", "14"), false);
+//        theAccountDAO.addAccountEntity(new AccountEntity("Hamilton", "15"), false);
 
         theAccountDAO.setId(1);
         System.out.println(theAccountDAO.getId());
